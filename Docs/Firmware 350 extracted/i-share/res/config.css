@@ -1,0 +1,27 @@
+#register .text
+{
+border:1px solid #BBB;
+height:15px;
+line-height:15px;
+width:200px;
+font-size:15px;
+padding:10px 0px;
+font-family:arial,"ËÎÌו";
+display:inline-block;
+}
+#register .select
+{
+height:35px;
+width:200px;
+font-size:16px;
+font-family:arial,"ËÎÌו";
+}
+#register .cbutton
+{
+WIDTH: 110px; 
+HEIGHT: 40px; 
+FONT-WEIGHT: bold
+}
+div.mask{display: none;position:absolute;left:0;top:0;background-color:#ffffff;opacity:0.7;filter:alpha(opacity=70);}
+div.panel{display:none;position:absolute;background-color:#003366;text-align:center;}
+button.button{width:250px; height: 22px;margin-top:28px;font-size:12px;color:black;};

@@ -1,0 +1,190 @@
+
+    
+.ib5v1g {
+	float: left;  
+	TEXT-ALIGN: center;
+	vertical-align: middle;
+	overflow: hidden;
+	background-color: #000;
+	width:100%;
+	height:100%;
+}
+
+
+#vieworig {
+width:70px;
+height:25px;
+line-height:25px;
+display:inline-block;
+Z-INDEX: 200;
+border-bottom: 1px solid #ffffff;
+border-left: 1px solid #ffffff;
+padding-bottom: 0px;
+padding-left: 2px;
+padding-right: 2px;
+display: inline-block;
+border-top: 1px solid #ffffff;
+border-right: 1px solid #ffffff;
+text-decoration: none;
+padding-top: 0px;
+-webkit-border-top-right-radius: 5px 5px;
+-webkit-border-bottom-right-radius: 5px 5px;
+-webkit-border-bottom-left-radius: 5px 5px;
+-webkit-border-top-left-radius: 5px 5px;
+COLOR: #E0E0E2;
+background-image:-webkit-gradient(linear,left top,left bottom,from(#323232),color-stop(0.05,#636363),color-stop(0.45,#2c2c2c),color-stop(0.55,#131313),to(#000));
+}
+
+body
+{
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+div
+{
+	margin:0px;
+	padding:0px;
+}
+#header
+{
+	background: rgb(86, 86, 86);
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:36px;
+	width:100%;
+	opacity:.8;
+	z-index: 50;
+}
+#bigimg
+{
+	left:0px;
+	width:100%;
+	height:100%;
+	TEXT-ALIGN: center;
+	vertical-align: middle;
+	overflow:hidden;
+	background-color: #000;
+	background:url(../img/loader.gif) no-repeat center center;
+	background-position:center center;
+}
+
+#img
+{
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	margin-left:0px;
+	margin-top:0px;
+}
+#img li
+{
+	border: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#footer
+{
+	background: rgb(86, 86, 86);
+	width:100%;
+	height:40px;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	display:block;
+	opacity:.8;
+}
+#navPre
+{
+	float:left;
+	background:url("../img/left.png") no-repeat center;
+	text-align: center;
+	top: 0;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	z-index: 50;
+}
+
+#navNext 
+{
+	float:right;
+	background:url("../img/right.png") no-repeat center;
+	text-align: center;
+	top: 0;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	z-index: 50;
+}
+#infos 
+{
+	border-width: 0px 0 0 0px;
+	border-color: #474747;
+	border-style: solid;
+	padding: 0 0px;
+}
+#infoUrl 
+{
+	float:left;
+	color: #E1E1E2;
+	text-decoration: none;
+	text-align: center;
+	display:inline-block;
+	width:49%;
+}
+#downhref
+{
+	float:right;
+	color: #E1E1E2;
+	text-decoration: none;
+	text-align: center;
+	display:inline-block;
+	width:49%;
+}
+#back
+{
+	color: #E1E1E2;
+	text-decoration: none;
+	text-align: center;
+	height: 45px;
+}
+#newdown
+{
+	color: #E1E1E2;
+	text-decoration: none;
+	text-align: center;
+	display:inline-block;
+	height: 45px;
+}
+#pageSize 
+{
+	color: #E1E1E2;
+	text-decoration: none;
+	text-align: center;
+	height: 20px;
+}
+#pageFrom
+{
+	color: #E1E1E2;
+	text-decoration: none;
+	text-align: center;
+	height: 20px;
+}
+.prevtt, .nexttt 
+{
+}
+.nexttt 
+{
+}
+.prevtt
+{
+}

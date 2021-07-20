@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="shortcut icon" href="i-share/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="i-share/img/favicon.ico" type="image/x-icon">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>ez Share</title>
+<script type="text/javascript" src="i-share/img/index.js"></SCRIPT>
+</head>
+<style type="text/css">
+body{margin:0; padding:0 ; text-align:center}
+.loadingimg {
+width: 320px;
+height: 100px;
+z-index: 99;
+padding: 0px 0px 0px 10px;
+display: block;
+}
+</style>
+<body>
+	<div style="width: 100%; height: 100%;background: url(i-share/img/IMG_7054.png) center no-repeat;display: block;text-align:center;">
+		<table style="width: 100%; height: 100%;">
+		<tr>
+			<td align="center" valign="middle"><br><br><br><br>
+				<div class="loadingimg">
+<form name=loading>
+  <p align="left">
+    <input id=show type=text name=chart style="font-family:Arial; font-weight:bolder; color:#ffffff; background-color:#0099ff; padding:0px; border-style:none;">
+   </p>
+   <p align=center>
+    <input type=text name=percent style="width:100px;color:#0099ff; text-align:center; border-width:medium; border-style:none;">
+  </p>
+</form>
+</div>
+			</td>
+		</tr>
+		</table>
+</div>
+</body>
+</html>
+<script> 
+var bar=0 
+var line="|" 
+var amount="|" 
+count();
+function count()
+{
+	bar=bar+5;
+	amount =amount + line;
+	//document.loading.chart.value=amount;
+	document.loading.chart.style.width = bar*3+'px';
+	document.loading.percent.value=parseInt(bar)+"%";
+	if (bar<99)
+	{
+		setTimeout("count()",100);
+	}
+	else
+	{
+		photo();
+	}
+}
+</script>

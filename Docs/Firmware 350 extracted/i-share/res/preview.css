@@ -1,0 +1,255 @@
+	body
+	{
+		padding:0;
+		margin:0;
+		background-color:#fff;
+	}
+	body,td,.p1,.p2
+	{
+		font-family:arial;
+	}
+	a:link 
+	{
+		text-decoration: none; 
+	}
+	a:visited
+	{
+		text-decoration: underline;
+	}
+	a:hover, a:active, a:focus 
+	{
+		text-decoration: underline;
+	}
+	.htb
+	{
+		margin:6px 0 5px 0;
+	}
+	.htb td
+	{
+		font-size:9pt;
+		line-height:18px;
+	}
+	.bi
+	{
+		background-color:#FCE6CD;
+		height:20px;
+		margin-bottom:10px;
+	}
+	.bi td
+	{
+		font-size:9pt;
+		line-height:18px;
+	}
+	.i
+	{
+		font-size:16px;
+		font-family:arial;
+		margin-right:3px;
+	}
+  #sugOut
+	{
+		position:relative;
+		border:0;
+		padding:0;
+		margin:0;
+		zoom:1;
+		z-index:1000;
+	}
+	#sug
+	{
+		border:1px solid #817F82;
+		display:none;
+		position:absolute;
+		top:28px;
+		left:0;
+		-moz-user-select:none;
+	}
+	#sug td
+	{
+		font:14px verdana;
+		padding:2px;
+	}
+	#sugOff
+	{
+		display:none;
+		position:absolute;
+		left:0;
+		background:#FBF2B0;
+		height:22px;
+		line-height:22px;
+		-moz-user-select:none;
+	}
+	img
+	{
+		-ms-interpolation-mode:bicubic;
+	}
+	.mo td
+	{
+		background-color:#36c;
+		color:#fff;
+	}
+	.ml td
+	{
+		background-color:#fff;
+		color:#000;
+	}
+	#container
+	{
+		margin-left:0px;
+	}
+	#imgContainer
+	{
+		font-size:12px;
+		font-family:Arial;
+	}
+	#detailImg
+	{
+		float:left;
+		margin-right:-122px;
+		border:1px solid gray;
+	}
+	#picWrap
+	{
+		margin:0 auto;
+		border-bottom:1px solid #D3D3D3;
+	}
+	#album
+	{
+		float:right;
+		width:122px;
+	}
+	#picInfo
+	{
+		height:29px;
+		margin:0 auto;
+	}
+	#picInfo td
+	{
+		overflow:hidden;
+	}
+	#imgFrom
+	{
+		width:100%;
+		float:left;
+		margin:5px 0 0 4px;
+		padding:0;
+		word-break:break-all;
+	}
+	.fontBar
+	{
+		font-weight:bolder;
+		font-size:12px;
+	}
+	.preImg
+	{
+		cursor:url(../img/pre.cur),auto;
+	}
+	.defalutImg
+	{
+		cursor:auto;
+	}
+	.nextImg
+	{
+		cursor:url(../img/next.cur),auto;
+	}
+	#smallImgs
+	{
+		width:122px;
+		height:493px;
+		position:relative;
+		overflow:hidden;
+	}
+	#imgList
+	{
+		position:relative;
+		width:119px;
+		margin-left:2px;
+	}
+	#imgList div
+	{
+		width:117px;
+		margin:0 auto 15px auto;
+		height:112px;
+		overflow:hidden;
+	}
+	#imgList div table
+	{
+		height:110px;
+		width:110px;
+		margin:0 0 0 5px;
+	}
+	#imgList div table td
+	{
+		overflow:hidden;
+		padding-top:5px;
+	}
+	#imgList div img
+	{
+		cursor:pointer;
+	}
+	#slidePre
+	{
+		height:26px;
+		width:112px;
+		display:block;
+		margin:0 0 15px 8px;
+	}
+	.preNormal
+	{
+		cursor:pointer;
+		background:url(../img/detailimg_bg_r.gif) no-repeat left -110px ;
+	}
+	.preHover
+	{
+		cursor:pointer;
+		background:url(../img/detailimg_bg_r.gif) no-repeat left -162px;
+	}
+	.preNone
+	{
+		background:url(../img/detailimg_bg_r.gif) no-repeat left -136px;
+	}
+	#slideNext
+	{
+		height:26px;
+		width:112px;
+		display:block;
+		margin:15px 0 0 8px;
+	}
+	.nextNormal
+	{
+		cursor:pointer;
+		background:url(../img/detailimg_bg_r.gif) no-repeat left -189px;
+	}
+	.nextHover
+	{
+		cursor:pointer;
+		background:url(../img/detailimg_bg_r.gif) no-repeat left -241px;
+	}
+	.nextNone
+	{
+		background:url(../img/detailimg_bg_r.gif) no-repeat left -215px;
+	}
+	.select
+	{
+		background:url(../img/detailimg_bg_r.gif) no-repeat left 2px;
+	}
+	.select table
+	{
+		border:1px;
+	}
+	.noselect table
+	{
+		margin:0 0 0 5px;
+		border:1px solid #999;
+	}
+	.zoomsrc
+	{
+		padding-left:20px;
+		
+	}
+	.rate
+	{
+		padding-left:20px;
+		padding-right:10px;
+		
+	}
