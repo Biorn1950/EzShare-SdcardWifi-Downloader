@@ -7,4 +7,5 @@ It create directories with the same structure of the sd card. You have to choose
 Automatic download news files and check and download modified files.
 
 Linux version: EzShareWifiSDcardDownloader.sh
+
 MacOS version: EzShareWifiSDcardDownloader-macos.sh
