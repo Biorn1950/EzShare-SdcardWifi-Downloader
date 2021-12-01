@@ -11,7 +11,7 @@
 ########## Edit this to change your local destination ########### ########### ########### ########### ########### 
 
 # Local directory for the data
-mainDir="/Users/jimconroy/Documents/CPAP"
+mainDir="/Users/jimconroy/Documents/CPAP-test"
 
 # Ez Share top Url, top directory, first folder and subfolders
 mainUrl="http://192.168.4.1"
@@ -55,7 +55,7 @@ dlList=()
 
 ########### check installed utilities ###########
 for ex in \
-echo echo date grep sed xargs wget
+echo echo date grep sed xargs curl
   do
     loc=$(which "${ex}")
     if [ "${loc}" = "" ] ; then
@@ -80,7 +80,7 @@ dlList()
     dlList["$nbfDl"]="${localFile} ${mainUrl}/${relFile}"
     let nbfDl=nbfDl+1
   else
-    echo "${localFile} ${mainUrl}/${relFile}" |  xargs -n 2 -P "${pDl}" wget --no-use-server-timestamps -q -O 
+    echo "${localFile} ${mainUrl}/${relFile}" |  xargs -n 2 -P "${pDl}" curl -s -o 
   fi
 }
 
@@ -98,14 +98,14 @@ dlShow()
 #################### dowlnoad files ####################
 dlProcess()
 {
-   echo "${dlList[*]}" | xargs -n 2 -P "${pDl}" wget --no-use-server-timestamps -q -O 
+   echo "${dlList[*]}" | xargs -n 2 -P "${pDl}" curl -s -o 
 }
 
 
 ########## cleanning lines ##########
 getLine()
 {
-  wget -q -O- "${mainUrl}/dir?${remoteDir[$currentDir]}" |
+  curl -s "${mainUrl}/dir?${remoteDir[$currentDir]}" |
   sed -n '/a>$/p' | sed -e '/\.<\/a>$/d' |  sed -e 's/<\/a>//g' | sed -e 's/<a href="//g' | sed -e 's/">//g' |
   sed -e's/- /-0/g' | sed -e 's/: /:0/g' | sed -e 's/&lt;DIR&gt;/DIR/g' |
   if [ ! -z "$blackList" ] ; then grep -vwE -i "${blackList}" ; elif [ ! -z "$whiteList" ] ; then grep -E -i "${whiteList}" ; fi
@@ -177,7 +177,6 @@ END
     fi
 
     localFile="${mainDir}/${relFile}"
-    echo "localFile: ${localFile} ${remoteTime}"
     if ! [ -f "${localFile}" ]; then
       let nbfNew=nbfNew+1
       if [ "${mode}" == "soft" ] ; then
@@ -213,7 +212,8 @@ done <<< "$(getDataInfo)"
 ########## main body ##########
 
 # change wifi network to Ez Share wifi
-# networksetup -setairportnetwork en0 "ez Share" "88888888"
+#echo "Changing wifi to Ez Share"
+#networksetup -setairportnetwork en0 "ez Share" "88888888"
 
 fileORdir
 
@@ -244,4 +244,5 @@ fi
 
 
 # change wifi network back
-# networksetup -setairportnetwork en0 "home-ssid" "home-pwd"
+#echo "Changing wifi back to home"
+#networksetup -setairportnetwork en0 "home-ssid" "home-pwd"
